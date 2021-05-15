@@ -1,0 +1,38 @@
+{
+  "name": "@rush-monorepo/example-pkg-basic",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/example-pkg-basic.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "rebuild": "npm run build",
+    "test": "tsdx test",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@types/node": "14.x",
+    "size-limit": "^4.10.2",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
+  },
+  "size-limit": [
+    {
+      "path": "dist/example-pkg-basic.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/example-pkg-basic.esm.js",
+      "limit": "10 KB"
+    }
+  ]
+}

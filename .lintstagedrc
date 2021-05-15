@@ -1,0 +1,13 @@
+{
+  "{apps,packages,features}/**/*.js?(x)": [
+    "eslint --fix --color",
+    "prettier --write"
+  ],
+  "{apps,packages,features}/**/*.ts?(x)": [
+    "eslint --fix --color",
+    "prettier --parser=typescript --write"
+  ],
+  "{apps,packages,features}/**/*.*.{css,less,md,json}": [
+    "prettier --write"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "rush-lint",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@microsoft/rush-lib": "^5.47.0",
+    "eslint": "^7.26.0",
+    "execa": "^5.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.0",
+    "typescript": "^4.2.4"
+  }
+}
