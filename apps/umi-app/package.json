@@ -1,5 +1,5 @@
 {
-  "name": "@rush-monorepo/example-app",
+  "name": "@rush-monorepo/umi-app",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -11,12 +11,12 @@
     "test:coverage": "umi-test --coverage"
   },
   "dependencies": {
+    "@rush-monorepo/example-feat-comp": "workspace:*",
+    "@rush-monorepo/example-pkg-basic": "workspace:*",
     "@umijs/preset-react": "1.x",
     "react-dom": "17.x",
     "react": "17.x",
-    "umi": "^3.4.20",
-    "@rush-monorepo/example-pkg-basic": "workspace:*",
-    "@rush-monorepo/example-feat-comp": "workspace:*"
+    "umi": "^3.4.20"
   },
   "devDependencies": {
     "@rush-monorepo/eslint-config": "workspace:*",

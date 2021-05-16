@@ -8,7 +8,7 @@ export default function IndexPage() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log('@rush-monorepo/example-pkg-basic: sum 1 and 1', sum(1, 1));
+    console.log('@rush-monorepo/example-pkg-basic: sum 1 and 1 = ', sum(1, 1));
   }, [count]);
 
   return (
