@@ -1,17 +1,18 @@
 # Monorepo Supported By Rush and PNPM
 
-> keywords: Monorepo/Rush/PNPM/React/Umi/TSDX
+> keywords: Monorepo/Rush/PNPM/React/CRA/UmiJS/TSDX
 
 ## Features
 
-- good structures
+- Structures
   - apps
   - features: Packages that do not need to be released, only reused in this Monorepo.
-  - packages:Packages that need to be released.
-- Eslint/Prettier integrated (auto fix only work with VSCode)
-- git hooks: commit-msg and pre-commit with Rush autoinstallers
-- solve the Rush `succeeded with warnings` problem
-- support PNPM workspace
+  - packages: Packages that need to be released.
+- CRA and Umi app example
+- ESlint/Prettier integrated (auto fix only work with VSCode)
+- Git hooks: commit-msg and pre-commit with Rush autoinstallers
+- Solve the Rush `succeeded with warnings` problem
+- Support PNPM workspace
 
 ## Quick Start
 
@@ -24,9 +25,9 @@ cd rush-monorepo-example
 
 rush update
 
-rush rebuild -T @rush-monorepo/example-app
+rush rebuild -T @rush-monorepo/cra-app
 
-cd apps/example-app
+cd apps/cra-app
 
 rushx start
 ```
