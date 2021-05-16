@@ -381,8 +381,12 @@
    */
   "projects": [
     {
-      "packageName": "@rush-monorepo/example-app",
-      "projectFolder": "apps/example-app"
+      "packageName": "@rush-monorepo/umi-app",
+      "projectFolder": "apps/umi-app"
+    },
+    {
+      "packageName": "@rush-monorepo/cra-app",
+      "projectFolder": "apps/cra-app"
     },
     {
       "packageName": "@rush-monorepo/eslint-config",
