@@ -6,7 +6,7 @@ yarn-error.log*
 
 # build files
 dist
-
+build
 # Runtime data
 *.pid
 *.seed

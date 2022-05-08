@@ -16,7 +16,7 @@
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.47.0",
+  "rushVersion": "5.68.2",
 
   /**
    * The next field selects which package manager should be installed and determines its version.
@@ -26,7 +26,7 @@
    * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
    * for details about these alternatives.
    */
-  "pnpmVersion": "6.3.0",
+  "pnpmVersion": "6.32.4",
 
   // "npmVersion": "4.5.0",
   // "yarnVersion": "1.9.4",
@@ -120,7 +120,7 @@
    * LTS schedule: https://nodejs.org/en/about/releases/
    * LTS versions: https://nodejs.org/en/download/releases/
    */
-  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0",
+  "nodeSupportedVersionRange": ">=14.15.0 <15.0.0 || >=16.0.0 <17.0.0",
 
   /**
    * Odd-numbered major versions of Node.js are experimental.  Even-numbered releases
@@ -381,16 +381,16 @@
    */
   "projects": [
     {
-      "packageName": "@rush-monorepo/umi-app",
-      "projectFolder": "apps/umi-app"
+      "packageName": "@rush-monorepo/eslint-config",
+      "projectFolder": "tools/eslint-config"
+    },
+    {
+      "packageName": "@rush-monorepo/prettier-config",
+      "projectFolder": "tools/prettier-config"
     },
     {
       "packageName": "@rush-monorepo/cra-app",
       "projectFolder": "apps/cra-app"
-    },
-    {
-      "packageName": "@rush-monorepo/eslint-config",
-      "projectFolder": "features/eslint-config"
     },
     {
       "packageName": "@rush-monorepo/example-feat-comp",
@@ -398,7 +398,8 @@
     },
     {
       "packageName": "@rush-monorepo/example-pkg-basic",
-      "projectFolder": "packages/example-pkg-basic"
+      "projectFolder": "packages/example-pkg-basic",
+      "shouldPublish": true
     }
     // {
     //   /**

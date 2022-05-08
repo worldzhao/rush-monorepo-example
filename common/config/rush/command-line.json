@@ -12,28 +12,24 @@
    */
   "commands": [
     {
-      "commandKind": "bulk",
-      "name": "rebuild",
-      "summary": "Build all projects",
-      "description": "This command is similar to \"rush build\"",
-      "safeForSimultaneousRushProcesses": false,
-      "enableParallelism": true,
-      "ignoreDependencyOrder": false,
-      "ignoreMissingScript": false,
-      "allowWarningsInSuccessfulBuild": true
+      "name": "commit",
+      "commandKind": "global",
+      "summary": "Commit prompt using commitlint.config.js.",
+      "autoinstallerName": "command-plugins",
+      "shellCommand": "commit"
     },
     {
       "name": "commitlint",
       "commandKind": "global",
       "summary": "Used by the commit-msg Git hook. This command invokes commitlint to lint commit message.",
-      "autoinstallerName": "rush-lint",
-      "shellCommand": "node common/autoinstallers/rush-lint/commit-lint.js"
+      "autoinstallerName": "command-plugins",
+      "shellCommand": "commitlint -e"
     },
     {
-      "name": "lint",
+      "name": "lint-staged",
       "commandKind": "global",
       "summary": "Used by the pre-commit Git hook. This command invokes eslint to lint staged changes.",
-      "autoinstallerName": "rush-lint",
+      "autoinstallerName": "command-plugins",
       "shellCommand": "lint-staged"
     }
     // {

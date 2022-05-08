@@ -1,12 +1,7 @@
 module.exports = {
-  root: true,
-  extends: [
-    '@rush-monorepo/eslint-config/typescript/react',
-    '@rush-monorepo/eslint-config/prettier',
-  ],
-  parserOptions: {
-    project: 'tsconfig.json',
-    tsconfigRootDir: __dirname,
-    sourceType: 'module',
+  extends: '@rush-monorepo/eslint-config/react',
+  rules: {
+    'prefer-const': 'warn',
+    'react/self-closing-comp': 'warn',
   },
 };

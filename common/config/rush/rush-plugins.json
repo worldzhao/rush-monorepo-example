@@ -1,0 +1,10 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush-plugins.schema.json",
+  "plugins": [
+    {
+      "packageName": "rush-upgrade-self-plugin",
+      "pluginName": "rush-upgrade-self-plugin",
+      "autoinstallerName": "command-plugins"
+    }
+  ]
+}

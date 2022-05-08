@@ -1,0 +1,19 @@
+{
+  "name": "@rush-monorepo/prettier-config",
+  "description": "prettier config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'missing @rush-monorepo/eslint-config build script'"
+  },
+  "peerDependencies": {
+    "prettier": "^2.2"
+  },
+  "dependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
+    "prettier-plugin-tailwindcss": "^0.1.10"
+  },
+  "devDependencies": {
+    "prettier": "^2.2"
+  }
+}
