@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "start": "craco start",
     "build": "craco build",
-    "build:testing": "env-cmd -f .env.testing npm run build",
-    "build:staging": "env-cmd -f .env.staging npm run build",
     "build:prod": "env-cmd -f .env.prod npm run build",
+    "build:staging": "env-cmd -f .env.staging npm run build",
+    "build:testing": "env-cmd -f .env.testing npm run build",
+    "start": "craco start",
     "test": "craco test"
   },
   "browserslist": {
@@ -29,12 +29,12 @@
     "@rush-monorepo/example-pkg-basic": "workspace:*",
     "axios": "^0.27.2",
     "lodash-es": "^4.17.21",
+    "react": "^18.1.0",
     "react-app-polyfill": "^3.0.0",
     "react-dom": "^18.1.0",
     "react-is": "^18.1.0",
     "react-query": "^3.38.1",
     "react-router-dom": "^6.3.0",
-    "react": "^18.1.0",
     "styled-components": "^5.3.5",
     "unstated-next": "^1.1.0",
     "web-vitals": "^2.1.4",
