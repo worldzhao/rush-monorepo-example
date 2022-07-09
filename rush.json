@@ -393,6 +393,10 @@
       "projectFolder": "apps/cra-app"
     },
     {
+      "packageName": "@rush-monorepo/vite-app",
+      "projectFolder": "apps/vite-app"
+    },
+    {
       "packageName": "@rush-monorepo/example-feat-comp",
       "projectFolder": "features/example-feat-comp"
     },

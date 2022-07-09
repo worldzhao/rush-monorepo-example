@@ -1,16 +1,20 @@
 # Monorepo Supported By Rush and PNPM
 
-> keywords: Monorepo/Rush/PNPM/React/CRA
+> keywords: Monorepo/Rush/PNPM/React/CRA/Vite
 
 ## Features
 
 - Structures
-  - apps
+  - apps: Web Apps
   - features: packages that do not need to be released, only reused in this Monorepo
   - packages: packages that need to be released
   - tools: common tools for all projects
-- create-react-app example
-- commitlint/eslint/prettier/lint-staged integrated
+- Examples
+  - create-react-app
+  - vite-react-app
+  - tsc package
+  - feature package
+- commitlint/eslint/prettier/lint-staged
 - commit-msg and pre-commit hooks
 
 ## Quick Start
